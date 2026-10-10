@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Internship Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Find Your Next Internship</h1>
+    <p>Explore opportunities and build your career.</p>
+  </header>
+
+  <main class="container">
+    <form id="filter-form">
+      <label for="search">Search internships</label>
+      <input id="search" type="search"
+        placeholder="Search by title or company">
+
+      <label for="domain">Filter by domain</label>
+      <select id="domain">
+        <option value="all">All domains</option>
+        <option value="Full Stack Development">Full Stack Development</option>
+        <option value="Data Analytics">Data Analytics</option>
+        <option value="UI/UX Design">UI/UX Design</option>
+      </select>
+
+      <button type="button" id="clear-button" >Clear filters</button>
+    </form>
+
+    <p id="results-message" role="status" aria-live="polite"></p>
+    <section id="internship-list"
+      aria-label="Available internships"></section>
+  </main>
+</body>
+</html>
